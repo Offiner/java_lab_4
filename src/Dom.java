@@ -1,4 +1,6 @@
-public class Dom extends Budynek{
+import java.util.Random;
+
+public class Dom implements Budynek{
 
     private double pow;
     private String adres;
@@ -43,5 +45,15 @@ public class Dom extends Budynek{
     @Override
     public void tanioCzyDrogo() {
 
+    }
+
+
+    public String opiszDom() {
+        return "Dom{" +
+                "pow=" + pow +
+                ", adres='" + adres + '\'' +
+                ", lOkien=" + lOkien +
+                ", lMieszk=" + lMieszk +
+                '}';
     }
 }
