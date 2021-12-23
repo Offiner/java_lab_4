@@ -32,6 +32,6 @@ public class Main {
         dom1.adresBudynku("Obrońców Wybrzeża 10");
         dom1.kolorDomu(KolorEnum.żółty);
         dom1.liczbaOkien(10);
-        dom1.opiszDom();
+        System.out.println(dom1.opiszDom());
     }
 }
