@@ -33,5 +33,12 @@ public class Main {
         dom1.kolorDomu(KolorEnum.żółty);
         dom1.liczbaOkien(10);
         System.out.println(dom1.opiszDom());
+        Budynek bud1 = new Dom();
+        bud1.adresBudynku("Konwalowa 15");
+        bud1.liczbaOkien(12);
+        bud1.powierzchnia(160);
+        bud1.liczbaMieszkancow(7);
+        System.out.println();
+
     }
 }
