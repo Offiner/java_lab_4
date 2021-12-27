@@ -33,6 +33,38 @@ public class Main {
         e) dodać do niej objekty typu Kierownik i Pracownik
         f) wypisać pętlą metody toString() wszystkich elementów listy
         */
+        Student s1 = new Student();
+        s1.nrIndeksu(2133);
+        s1.rokStudiow(3);
+        s1.specjalizacja("Pływanie");
+        s1.obywatelstwo("Hiszpańskie");
+        s1.wiek(21);
+        Student s2 = new Student();
+        s2.nrIndeksu(2643);
+        s2.rokStudiow(2);
+        s2.specjalizacja("Joga");
+        s2.obywatelstwo("Duńskie");
+        s2.wiek(21);
+        Pracownik p1 = new Pracownik();
+        p1.uprawnienia(true);
+        p1.lataPracy(3);
+        p1.stanowisko("Sprzątacz");
+        p1.obywatelstwo("Polskie");
+        p1.wiek(31);
+        Pracownik p2 = new Pracownik();
+        p2.uprawnienia(false);
+        p2.lataPracy(1);
+        p2.stanowisko("Programista");
+        p2.obywatelstwo("Hindus");
+        p2.wiek(28);
+        System.out.println(s1.toString());
+        System.out.println(s2.toString());
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+
+
+
+
 
         /* zad5 - Dla chętnych
         Stworzyć klasę która będzie implementować 2 lub 3 interfejsy następnie będzie

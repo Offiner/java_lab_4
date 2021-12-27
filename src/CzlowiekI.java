@@ -1,4 +1,4 @@
 public interface CzlowiekI {
-    int wiek ();
-    String obywatelstwo ();
+    int wiek (int wiek);
+    String obywatelstwo (String obywatelstwo);
 }
