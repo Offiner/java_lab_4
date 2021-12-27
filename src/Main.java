@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
@@ -15,13 +15,31 @@ public class Main {
            PODPOWIEDZI:
            scan.next() - można wprowadzać dowolny znak z klawiatury,
            index = Integer.parseInt(scan.next()); - parsowanie zmiennej do typu int (liczbowego calkowitego)
-
            warto stworzyć flagę np. isIndexCorrect = false, i niech pętla sie wykonuje, dopuki flaga jest false,
            boolean isIndexCorrect
            white(!isIndexCorrect) {}
         */
+        int [] tab = new int[]{1,2,3,4,5,6};
+        String nrIndeksu="0";
+        Scanner scan = new Scanner(System.in);
+        int liczba=0;
+        do{
+            if(liczba != 0)
+                System.out.println("Niepoprawny numer!");
+            System.out.println("Wprowadź numer indeksu: ");
+            nrIndeksu = scan.next();
+            try {
+                //liczba = Double.parseDouble(text);
+                liczba = Integer.parseInt(nrIndeksu);
+            }
+            catch(NumberFormatException exception){
+                System.out.println("Nie podano liczby");
+                break;
+            }
+            liczba = Integer.parseInt(nrIndeksu);
 
 
+        }while (liczba > 5 | liczba < 0 );
 
         /* zad.2
         a) stworzyć dowolny przykład z NullPonterException,
