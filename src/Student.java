@@ -1,7 +1,12 @@
 public class Student implements StudentI{
+    private int wiek;
+    private String obywatelstwo;
+    private int nrIndeksu;
+    private int rokStudiow;
+    private String specjalizacja;
     @Override
     public int wiek() {
-        return 0;
+        return this.wiek=wiek();
     }
 
     @Override
@@ -23,4 +28,8 @@ public class Student implements StudentI{
     public String specjalizacja() {
         return null;
     }
+
+    public Student() {
+    }
+
 }
